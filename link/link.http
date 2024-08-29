@@ -1,0 +1,29 @@
+GET
+http://localhost:4011/api/phonebill
+{
+"price_plan" : "sms 101",
+"actions" : "sms, sms"
+}
+
+GET 
+http://localhost:4011/api/price_plans  
+
+
+POST 
+http://localhost:4011/api/price_plan/create
+{
+"name": "sms 100",
+"call_cost" : 2.65,
+"sms_cost": 0.45
+}
+
+POST
+http://localhost:4011/api/price_plan/update 
+{
+    "name": "sms 100",
+    "call_cost" : 2.65,
+    "sms_cost": 0.45
+}
+
+
+
